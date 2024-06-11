@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* blog--------------------- */
+        #blog {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 4px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .blog-heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .blog-heading span {
+            color: blue;
+
+        }
+
+        .blog-heading h2 {
+            font-size: 2.4rem;
+            color: #2b2b2b;
+            font-weight: 600;
+        }
+
+        .blog-continer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+            flex-wrap: wrap;
+        }
+
+        .blog-box {
+            width: 350px;
+            background-color: hsla(0, 0%, 81%, 0.833);
+            border: 1px solid #ececec;
+            margin: 20px;
+        }
+
+        .blog-img {
+            width: 100%;
+            height: 250px;
+        }
+
+        .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .blog-text {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-box span {
+            color: #f33c3c;
+            font-size: 0.9rem;
+        }
+
+        .blog-text .blog-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #272727;
+
+        }
+
+        .blog-text .blog-title:hover {
+            color: #0a0606;
+            transition: all ease 0.3s;
+        }
+
+        .blog-text p {
+            color: #0c0404;
+            font-size: 0.9rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 20px 0px;
+        }
+
+        .blog-text a {
+            color: white;
+            width: 45%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            background-color: #007BFF;
+        }
+
+        .blog-text a:hover {
+            color: #080505;
+            transition: all ease 0.3s;
+        }
+
+        @media(max-width:1250px) {
+            .blog-box {
+                width: 300px;
+
+            }
+        }
+
+        .my-blog {
+            margin-left: 80%;
+            color: white;
+        }
+
+        /* .my-blog a{
+            color: white ;
+        } */
+        button {
+            padding: 8px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            /* Adding transition for smooth effect */
+        }
+
+        button:hover {
+            background-color: rgb(146, 146, 146);
+            /* Change the background color on hover */
+        }
+
+        @media(max-width:1100px) {
+            .blog-box {
+                width: 70%;
+            }
+        }
+
+
+        /* Container to center the form */
+        .container {
+            width: 120%;
+            background-color: rgba(216, 211, 211, 0.755);
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-right: 100px;
+
+
+        }
+
+        .form-group {
+            margin-bottom: 0em;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.75em;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        body {
+            background-image: url('assests/images/blogcover.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- blog-section -------->
+    <section id="blog">
+
+        <!-- heading------ -->
+        <div class="blog-heading">
+            <h2>My Blog</h2>
+        </div>
+        <div class="my-blog">
+            <a href="dashboard.html"><button>Create Blog</button></a>
+        </div>
+
+        <div class="blog-continer">
+            <!-- box1------- -->
+            <div class="blog-box">
+                <!-- img -->
+                <div class="blog-img">
+                    <img src="assests/images/blognovel3.jpg" alt="Novel Blog">
+                </div>
+                <!-- .blog-text -->
+                <div class="blog-text">
+                    <span>18 JULY 2024/ Web Design</span>
+                    <p class="blog-title">"Echoes of Eternity: A Journey Through Time"</a>
+                    <p>Step into a world where time is not linear, where echoes of the past reverberate through the
+                        present and ripple into the future. "Echoes of Eternity" follows the lives of disparate
+                        individuals whose paths intersect across centuries, bound by an inexplicable force that
+                        transcends time itself.</p>
+                    <a href="https://www.bookgeeks.in/">Read More</a>
+                </div>
+            </div>
+
+            <!-- box2------- -->
+            <div class="blog-box">
+                <!-- img -->
+                <div class="blog-img">
+                    <img src="assests/images/blogc3.jpg" alt="cricket Blog">
+                </div>
+                <!-- .blog-text -->
+                <div class="blog-text">
+                    <span>18 JULY 2024/ Web Design</span>
+                    <p class="blog-title">"Beyond the Boundary: Exploring the Essence of Cricket"</p>
+                    <p>Join us as we embark on a journey through the highs and lows, the triumphs and tribulations, of
+                        this beloved game. With insightful analysis, engaging commentary, and a genuine love for
+                        cricket, our blog aims to unite fans from all corners of the world in a shared appreciation for
+                        the sport we hold dear.</p>
+                    <a href="https://cricblog.net/">Read More</a>
+                </div>
+            </div>
+
+            <!-- box3------- -->
+            <div class="blog-box">
+                <!-- img -->
+                <div class="blog-img">
+                    <img src="assests/images/blogmusic2.jpg" alt="music Blog">
+                </div>
+                <!-- .blog-text -->
+                <div class="blog-text">
+                    <span>18 JULY 2024/ Web Design</span>
+                    <p class="blog-title">"Harmony Haven: Exploring the Melodies of Life"</p>
+                    <p>Whether you're a passionate music aficionado or a casual listener, "Harmony Haven" invites you to
+                        explore the boundless creativity and emotional depth found within every note. Join us as we
+                        embark on an unforgettable sonic adventure, where every beat tells a story and every chord
+                        resonates with the rhythms of life.</p>
+                    <a href="https://audiohype.io/resources/best-music-blogs/">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="postmyblog">
+            <h1>Create My Blog / News</h1>
+            <div class="container">
+                <form id="blogPostForm">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Content:</label>
+                        <textarea id="content" name="content" rows="10" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="date_posted">Date Posted:</label>
+                        <input type="date" id="date_posted" name="date_posted" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category:</label>
+                        <input type="text" id="category" name="category" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tags">Tags:</label>
+                        <input type="text" id="tags" name="tags" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div> -->
+        <div class="blog-continer" id="blog-container">
+            <!-- Static blog post examples here -->
+        </div>
+    </section>
+
+    <script>
+        function fetchPosts() {
+            fetch('http://127.0.0.1:8000/blog-posts/')
+                .then(response => response.json())
+                .then(data => {
+                    const blogContainer = document.getElementById('blog-container');
+
+                    data.forEach(post => {
+                        const blogBox = document.createElement('div');
+                        blogBox.className = 'blog-box';
+
+                        const blogImg = document.createElement('div');
+                        blogImg.className = 'blog-img';
+                        const img = document.createElement('img');
+                        img.src = 'assests/images/blogmusic2.jpg';  // Specified image path
+                        blogImg.appendChild(img);
+
+                        const blogText = document.createElement('div');
+                        blogText.className = 'blog-text';
+
+                        const span = document.createElement('span');
+                        span.textContent = ` ${new Date(post.date_posted).toLocaleDateString()} / ${post.category}`;
+                        blogText.appendChild(span);
+
+                        const titleLink = document.createElement('a');
+                        titleLink.className = 'blog-title';
+                        titleLink.href = '#';  // Link to the full post
+                        titleLink.textContent = post.title;
+                        blogText.appendChild(titleLink);
+
+                        const p = document.createElement('p');
+                        p.textContent = post.content;
+                        blogText.appendChild(p);
+
+                        const readMoreLink = document.createElement('a');
+                        readMoreLink.href = '#';  // Link to the full post
+                        readMoreLink.textContent = 'Read More';
+                        blogText.appendChild(readMoreLink);
+
+                        blogBox.appendChild(blogImg);
+                        blogBox.appendChild(blogText);
+
+                        blogContainer.appendChild(blogBox);
+                    });
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        }
+
+        // Fetch posts on initial load
+        document.addEventListener('DOMContentLoaded', fetchPosts);
+    </script>
+</body>
+
+</html>
